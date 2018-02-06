@@ -1,0 +1,100 @@
+.upvote-page {
+  padding: 10px;
+}
+
+.upvote-page__title {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.upvote-page .card {
+  display: flex;
+  margin: 10px 0;
+  background: #ffffff;
+  justify-content: space-between;
+}
+
+.card .card-info {
+  display: flex;
+}
+.upvote-page .card-info__ranking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 60px;
+  text-align: center;
+  background: #303F9F;
+  color: #FFFFFF;
+  padding: 0 5px;
+}
+
+.card-info__ranking  span {
+  font-size: 30px;
+  font-weight: 800;
+  padding-right: 5px;
+}
+.upvote-page .card-info__title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 10px;
+  width: 69%;
+}
+
+.upvote-page .card-image {
+  display: flex;
+  align-items: center;
+}
+.upvote-page .card .card-action {
+  border-top: 0;
+}
+.vote-count {
+  display: inline-block;
+  text-align: center;
+}
+.vote-count .material-icons {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media only screen and (min-width: 640px) {
+  .upvote-page .card-image {
+    width: 100px;
+  }
+  .card-info__ranking  span {
+    font-size: 60px;
+  }
+  .upvote-page .card-info__title {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  .upvote-page .card {
+    flex-direction: row;
+  }
+  .upvote-page .card-content {
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .upvote-page .card-info__ranking {
+    font-size: 32px;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0 10px;
+  }
+  .upvote-page__title {
+    font-size: 30px;
+  }
+  .upvote-page .card-image {
+    width: 100px;
+  }
+  .upvote-page .card-info__title {
+    width: auto;
+  }
+  .upvote-page {
+    padding: 30px;
+  }
+}

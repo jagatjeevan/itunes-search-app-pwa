@@ -1,0 +1,35 @@
+<div class="list-wrapper">
+    {{#each data}}
+    <div class="card-wrapper">
+        <div class="card u-flex">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img
+                        alt="img"
+                        class="activator"
+                        src="{{artworkUrl100}}"
+                />
+            </div>
+            <div class="card-content u-flex">
+                <div class="card-header u-flex u-pointer">
+                    <span class="card-title grey-text text-darken-4 activator">{{trackName}}</span>
+                    <i class="material-icons right activator">more_vert</i>
+                </div>
+                <div class="card-actions u-flex">
+                    {{#if ../isLoggedIn}}
+                    <i class="material-icons like-icon u-pointer">
+                        thumb_up
+                        <input type="hidden" value="{{collectionId}}">
+                    </i>
+                    {{/if}}
+                    <a target="_blank" href="{{trackViewUrl}}">
+                        More
+                    </a>                    
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title u-flex grey-text text-darken-4">{{trackName}}<i class="material-icons right">close</i></span>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

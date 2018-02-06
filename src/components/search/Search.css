@@ -1,0 +1,67 @@
+@import '../../style/palette.css';
+
+.nav-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.dropdown-wrapper {
+  margin-right: 15px;
+  min-width: 110px;
+  text-align: center;
+}
+
+.search-wrapper {
+  position: relative;
+  flex-grow: 1;
+  padding-top: 20px;
+}
+
+.search-wrapper i {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+
+.search-wrapper input.search-input {
+  background: rgba(255, 255, 255, .3);
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.btn-wrapper {
+  margin: auto 10px;
+}
+
+ul li.select {
+  font-weight: 600;
+  background: #e0e0e0;
+}
+.dropdown-button {
+  min-width: 120px;
+  padding: 0 10px;
+}
+.dropdown-button:hover {
+  background: var(--default-primary-color);
+}
+
+.dropdown-button.active + .dropdown-content {
+  opacity: 1;
+  display: block;
+}
+
+@media only screen and (min-width: 640px) {
+  .search-wrapper {
+    width: 40vw;
+    flex-grow: initial;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .search-wrapper {
+    width: 30vw;
+  }
+}
